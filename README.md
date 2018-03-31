@@ -8,7 +8,7 @@ This game is based on the arcade classic game, Frogger.
 
 ## How to run the game
 
-You can [play the game here](https://nickhericks.github.io/arcade-game/) or download the repository to you local computer and open the index.html file in a web browser of your choice.
+You can [play the game here](https://nickhericks.github.io/arcade-game-frogger/) or download the repository to you local computer and open the index.html file in a web browser of your choice.
 
 ## How to play
 
