@@ -1,13 +1,71 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>Effective JavaScript: Frogger</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <title>mozFrogger</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+  <!-- Victory overlay modal -->
+  <div id="victoryModal" class="victory-modal">
+    <div class="victory-message">
+      <h2 class="">Level up!</h2>
+      <p class="current-level">
+        Level: <span id="currentLevel"></span>
+      </p>
+      <button class="continue-button">Continue</button>
+    </div>
+  </div>
+
+  <h1 class="game-title">mozFrogger</h1>
+
+  <!-- Game control toggles -->
+  <section class="game-controls">
+    <span class="control-description">touch input</span>
+    <label id="arrows" class="switch">
+      <input type="checkbox">
+      <span class="slider round"></span>
+    </label>
+    <span class="control-description music-text">silence please</span>
+    <label id="music" class="switch">
+      <input type="checkbox">
+      <span class="slider round"></span>
+    </label>
+  </section>
+
+  <section class="display-field">
+        <section class="game-display">
+      <!-- Canvas is inserted here -->
+      <section id="gameCanvas">
+      </section>
+    </section>
+        <section class="game-functions">
+      <!-- On-screen direction buttons for mobile -->
+      <section id="allButtons" class="all-buttons">
+        <div>
+          <button id="up" class="arrow">⇧</button>
+        </div>
+        <div class="sideways">
+          <button id="left" class="arrow button-spacing">⇦</button>
+          <button id="right" class="arrow">⇨</button>
+        </div>
+        <div>
+          <button id="down" class="arrow">⇩</button>
+        </div>
+      </section>
+    </section>
+  </section>
+
+    <footer>
+      <p>
+        // built by <a class="bold" target="_blank" href="http://nickhericks.com/">Nick Hericks</a>
+      </p>
+    </footer>
+
     <script src="js/resources.js"></script>
     <script src="js/app.js"></script>
     <script src="js/engine.js"></script>
+
 </body>
 </html>
